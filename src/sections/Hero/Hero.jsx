@@ -46,7 +46,7 @@ import { useTheme } from '../../common/ThemeContext';
                         <img src={instagramIcon} alt="Instagram icon" />
                     </a>
                 </span>
-                <p>Enthusiastic learner developing modern React apps.</p>
+                <p className={styles.description}>Enthusiastic learner developing modern React apps.</p>
                 <a href={CV} download>
                     <button className='hover'>Resume</button>
                 </a>
