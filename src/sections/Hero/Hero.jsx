@@ -7,7 +7,7 @@ import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import instagramLight from '../../assets/icons8-instagram-light.svg';
-import instagramDark from '../../assets/icons8-instagram-dark.svg';
+import instagramDark from '../../assets/icons8-instagram-4.svg';
 import CV from '../../assets/Resume March 24.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
