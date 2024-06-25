@@ -46,7 +46,7 @@ import { useTheme } from '../../common/ThemeContext';
                         <img src={instagramIcon} alt="Instagram icon" />
                     </a>
                 </span>
-                <p className={styles.description}>A passionate software developer focused on creating impactful digital experiences through both front-end and back-end technologies. I thrive on solving complex problems, continuously learning, and contributing to the developer community through meaningful projects and collaborations.</p>
+                <p className={styles.description}>Constant learner, problem solver, and collaborative team player.</p>
                 <a href={CV} download>
                     <button className='hover'>Resume</button>
                 </a>
