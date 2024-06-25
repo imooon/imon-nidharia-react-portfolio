@@ -3,7 +3,7 @@ function Contact() {
   return (
     <section id="contact" className={styles.container}>
         <h1 className="sectionTitle">Reach out!</h1>
-        <form action="">
+        <form action="https://formspree.io/f/xwpeeakn" method="post">
             <div className="formGroup">
                 <label htmlFor="name" hidden>
                     Name
