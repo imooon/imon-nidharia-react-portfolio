@@ -1,67 +1,63 @@
-# Imon Nidharia React Portfolio
+# Imon Nidharia's React Portfolio
+
+## Table of Contents
+- [Description](#description)
+- [Projects](#projects)
+- [Skills](#skills)
+- [Contact](#contact)
+- [License](#license)
 
 ## Description
 
-#### Welcome to my React-powered portfolio, where I present a curated selection of my top-notch projects, both solo endeavors and collaborative efforts with fellow developers. As a student software developer, I've dedicated myself to crafting meaningful digital experiences, and this platform serves as a testament to that dedication.
+Welcome to my React-powered portfolio, where I present a curated selection of my top-notch projects, both solo endeavors and collaborative efforts with fellow developers. As a student software developer, I've dedicated myself to crafting meaningful digital experiences, and this platform serves as a testament to that dedication.
 
-#### Throughout my journey, I've come to understand the significance of community in the realm of web development. This website not only showcases my work but also embodies my commitment to being an active participant in this vibrant community. Whether through contributing to open-source projects or collaborating with peers, I continuously strive to elevate my skills and contribute positively to the field.
+Throughout my journey, I've come to understand the significance of community in the realm of web development. This website not only showcases my work but also embodies my commitment to being an active participant in this vibrant community. Whether through contributing to open-source projects or collaborating with peers, I continuously strive to elevate my skills and contribute positively to the field.
 
-#### My ultimate goal with this portfolio is to secure opportunities as a freelancer or within a reputable company where I can apply my expertise and passion for coding. Your feedback and inquiries are invaluable to me, so please feel free to utilize the contact form below to get in touch or share your thoughts. Thank you for visiting, and I look forward to connecting with you!
+My ultimate goal with this portfolio is to secure opportunities as a freelancer or within a reputable company where I can apply my expertise and passion for coding. Your feedback and inquiries are invaluable to me, so please feel free to use the contact form below to get in touch or share your thoughts. Thank you for visiting, and I look forward to connecting with you!
 
-## User Story
+## Projects
 
-#### AS AN employer looking for candidates with experience building single-page applications
-#### I WANT to view a potential employee's deployed React portfolio of work samples
-#### SO THAT I can assess whether they're a good candidate for an open position
+This section highlights all of my group projects and solo endeavors. Here are some of the key projects I've worked on:
 
-## Acceptance Criteria
+- **Code Collab**: A platform designed to connect like-minded individuals for collaborative coding sessions. Utilizing technologies such as React and Socket.io, Code Collab facilitates real-time communication and project collaboration. My primary responsibility was developing the backend, ensuring a robust and scalable infrastructure to support seamless user interactions and data management.
+  
+- **Harmony Hub**: An application designed to help users alleviate their minds and relieve stress through a variety of engaging activities. By leveraging external APIs and visual CSS, Harmony Hub offers a soothing and interactive user experience. My role focused on creating a fun and relaxing quiz feature, allowing users to participate in light-hearted quizzes to ease their minds and feel good.
+  
+- **Motor Matcher**: A comprehensive platform for buying and selling vehicles. As one of my first group projects, it required extensive collaboration on both the front end and back end. My primary responsibility was setting up the MySQL database, ensuring efficient data management and seamless integration with the rest of the application.
 
-#### GIVEN a single-page application portfolio for a web developer
+Feel free to explore the GitHub repositories linked for each project to get a deeper understanding of my work.
 
-#### WHEN I load the portfolio
-#### THEN I am presented with a page containing a header, a section for content, and a footer
+## Skills
 
-#### WHEN I view the header
-#### THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
+This section highlights some of my core skills, both technical and soft skills:
 
-#### WHEN I view the navigation titles
-#### THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+- **Technical Skills**: React, JavaScript, HTML, CSS, Node.js, Express.js, MongoDB, Git, etc.
+- **Soft Skills**: Problem-solving, teamwork, communication, adaptability, and continuous learning.
 
-#### WHEN I click on a navigation title
-#### THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
+These skills have been honed through various projects and collaborative efforts with other aspiring developers.
 
-#### WHEN I load the portfolio the first time
-#### THEN the About Me title and section are selected by default
+## Contact
 
-#### WHEN I am presented with the About Me section
-#### THEN I see a recent photo or avatar of the developer and a short bio about them
+Feel free to reach out to me using the contact form below. I am open to feedback, inquiries, and collaboration opportunities. Your messages are important to me, and I strive to respond promptly.
 
-#### WHEN I am presented with the Portfolio section
-#### THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
+- **Email**: [imon@duck.com](mailto:imon@duck.com)
+- **LinkedIn**: [Imon Nidharia](https://www.linkedin.com/in/imon-nidharia/)
 
-#### WHEN I am presented with the Contact section
-#### THEN I see a contact form with fields for a name, an email address, and a message
-
-#### WHEN I move my cursor out of one of the form fields without entering text
-#### THEN I receive a notification that this field is required
-
-#### WHEN I enter text into the email address field
-#### THEN I receive a notification if I have entered an invalid email address
-
-#### WHEN I am presented with the Resume section
-#### THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
-
-#### WHEN I view the footer
-#### THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
+You can also use the [Formspree.io](https://formspree.io) integrated into this site to send me a direct message.
 
 ## URL of the GitHub repository
 
-https://github.com/imooon/imon-nidharia-react-portfolio
+[GitHub Repository](https://github.com/imooon/imon-nidharia-react-portfolio)
 
 ## URL of the deployed Netlify application
 
-https://imon-nidharia.netlify.app/
+[Deployed Application](https://imon-nidharia.netlify.app/)
+
+## Resources 
+
+1. **Images**: All images on this website have been generated using Dall-E, ensuring a unique and customized visual experience.
+2. **Contact Form**: The contact form on this site is powered by [Formspree.io](https://formspree.io), providing a reliable way for you to get in touch with me.
 
 ## License 
 
-#### Please refer to the license in the repository.
+Please refer to the license in the [GitHub repository](https://github.com/imooon/imon-nidharia-react-portfolio) for detailed information.
