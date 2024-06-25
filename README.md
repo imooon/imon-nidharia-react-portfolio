@@ -40,10 +40,10 @@ These skills have been honed through various projects and collaborative efforts 
 
 Feel free to reach out to me using the contact form below. I am open to feedback, inquiries, and collaboration opportunities. Your messages are important to me, and I strive to respond promptly.
 
-- **Email**: [imon@duck.com]
-- **LinkedIn**: [[Your LinkedIn Profile](https://www.linkedin.com/in/imon-nidharia/)]
+- **Email**: [imon@duck.com](mailto:imon@duck.com)
+- **LinkedIn**: [Imon Nidharia](https://www.linkedin.com/in/imon-nidharia/)
 
-You can also use the formspree.io service integrated into this site to send me a direct message.
+You can also use the [Formspree.io](https://formspree.io) integrated into this site to send me a direct message.
 
 ## URL of the GitHub repository
 
@@ -56,7 +56,7 @@ You can also use the formspree.io service integrated into this site to send me a
 ## Resources 
 
 1. **Images**: All images on this website have been generated using Dall-E, ensuring a unique and customized visual experience.
-2. **Contact Form**: The contact form on this site is powered by Formspree.io, providing a reliable way for you to get in touch with me.
+2. **Contact Form**: The contact form on this site is powered by [Formspree.io](https://formspree.io), providing a reliable way for you to get in touch with me.
 
 ## License 
 
