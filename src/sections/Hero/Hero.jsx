@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import profilepicture from '../../assets/profilepicture-modified.png';
+import profilepicture from '../../assets/profilepic-photoaidcom-cropped.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import githubLight from '../../assets/github-light.svg';
