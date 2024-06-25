@@ -23,7 +23,7 @@ import { useTheme } from '../../common/ThemeContext';
         return <section id="hero" className={styles.container}>
             <div className={styles.colorModeContainer}>
                 <img className={styles.hero}
-                     src={profilepicture} alt="Profile picture of Imon Nidharia" 
+                     src={profilepicture} alt="Profile picture" 
                      />
                      <img className={styles.colorMode} src={themeIcon} alt="Colour mode icon" onClick={toggleTheme}/>
             </div> 
