@@ -1,6 +1,8 @@
 import React from 'react';
-import Navbar from './components/Navbar'; // Adjust the path as needed
-import './components/Navbar.css'; // Make sure this path is correct
+import Navbar from './components/Navbar/Navbar'; // Adjust the path as needed
+import './components/Navbar/Navbar.css'
+import Projects from './components/Projects/Projects';
+import './components/Projects/Projects.css'; 
 
 const App = () => {
   return (
@@ -14,9 +16,9 @@ const App = () => {
         <h2>About Me</h2>
         <p>Here’s a little bit about me.</p>
       </section>
-      <section className="section" id="projects">
+      <section className="section section-projects" id="projects">
         <h2>Projects</h2>
-        <p>Check out my work here.</p>
+        <Projects /> {/* Use the Projects component here */}
       </section>
       <section className="section" id="contact">
         <h2>Contact</h2>
