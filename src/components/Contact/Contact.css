@@ -1,0 +1,86 @@
+/* ContactStyles.css */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #003366; /* Dark Navy Blue background */
+    color: #f5f5f5; /* White text color */
+    padding: 20px; /* Padding for the section */
+  }
+  
+  .sectionTitle {
+    color: #f5f5f5; /* White color for the section title */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto; /* Center form horizontally */
+  }
+  
+  textarea,
+  input:not([type='submit']) {
+    height: 50px;
+    padding-left: 16px;
+    width: 250px;
+    border-radius: 20px;
+    border: #888 1px solid;
+    box-sizing: border-box;
+    background-color: #fff; /* White background for inputs */
+    color: #333; /* Dark grey text color for inputs */
+  }
+  
+  textarea {
+    padding-top: 16px;
+    resize: none;
+    height: 250px;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #333; /* Dark grey placeholder text color */
+  }
+  
+  .submit-btn {
+    background-color: #00509e; /* Dark Blue color for the button */
+    color: #fff; /* White text color for the button */
+    border: none;
+    border-radius: 20px;
+    width: 126px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+    margin: auto; /* Center button horizontally */
+  }
+  
+  .submit-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .submit-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  }
+  
+  @media (min-width: 800px) {
+    textarea,
+    input:not([type='submit']) {
+      width: 600px;
+      font-size: 20px;
+    }
+    form {
+      gap: 40px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    textarea,
+    input:not([type='submit']) {
+      width: 800px;
+    }
+  }
+  

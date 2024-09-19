@@ -1,8 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar'; // Adjust the path as needed
-import './components/Navbar/Navbar.css'
-import Projects from './components/Projects/Projects';
-import './components/Projects/Projects.css'; 
+import Navbar from './components/Navbar/Navbar'; // Adjust path as needed
+import './components/Navbar/Navbar.css'; // Import Navbar CSS
+import Projects from './components/Projects/Projects'; // Import Projects component
+import './components/Projects/Projects.css'; // Import Projects CSS
+import Contact from './components/Contact/Contact'; // Import Contact component
+import './components/Contact/Contact.css'; // Import Contact CSS
 
 const App = () => {
   return (
@@ -20,10 +22,7 @@ const App = () => {
         <h2>Projects</h2>
         <Projects /> {/* Use the Projects component here */}
       </section>
-      <section className="section" id="contact">
-        <h2>Contact</h2>
-        <p>Get in touch with me.</p>
-      </section>
+      <Contact /> {/* Include the Contact component here */}
     </div>
   );
 };

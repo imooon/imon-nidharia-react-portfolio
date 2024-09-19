@@ -1,11 +1,33 @@
 import React from 'react';
+import '../Contact/Contact.css';
 
-const Contact = () => {
+function Contact() {
   return (
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:imon@example.com">imon@example.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/imonnidharia" target="_blank" rel="noopener noreferrer">Imon Nidharia</a></p>
+    <section id="contact" className="contact-container">
+      <h1 className="sectionTitle">Reach out!</h1>
+      <form action="https://formspree.io/f/xwpeeakn" method="post">
+        <div className="formGroup">
+          <label htmlFor="name" hidden>
+            Name
+          </label>
+          <input type="text" name="name" id="name" placeholder="Name" required/>
+        </div>
+
+        <div className="formGroup">
+          <label htmlFor="email" hidden>
+            Email
+          </label>
+          <input type="text" name="email" id="email" placeholder="Email" required/>
+        </div>
+
+        <div className="formGroup">
+          <label htmlFor="message" hidden>
+            Message
+          </label>
+          <textarea name="message" id="message" placeholder="Write your message here..." required></textarea>
+        </div>
+        <input className="submit-btn" type="submit" value="Submit" />
+      </form>
     </section>
   );
 }
