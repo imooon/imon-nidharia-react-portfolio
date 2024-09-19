@@ -1,0 +1,23 @@
+/* Projects.css */
+
+/* Basic styling for the projects section */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between project items */
+  }
+  
+  .project-card {
+    background-color: #fff; /* White background for contrast */
+    color: black; /* Black text color */
+    padding: 20px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth transition for floating effect */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px); /* Slightly lift the card on hover */
+  }
+  

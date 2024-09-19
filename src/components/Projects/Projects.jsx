@@ -1,4 +1,5 @@
 import React from 'react';
+import './Projects.css'; // Import the CSS file
 
 const projects = [
   {
@@ -22,15 +23,15 @@ const Projects = () => {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <ul>
+      <div className="projects-container">
         {projects.map((project, index) => (
-          <li key={index}>
+          <div className="project-card" key={index}>
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
