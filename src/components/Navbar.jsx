@@ -1,14 +1,18 @@
 import React from 'react';
+import './Navbar.css'; // Make sure you have this CSS file for styling
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav className="navbar">
+      <div className="navbar-left">
+        <h1>Imon Nidharia</h1>
+      </div>
+      <div className="navbar-right">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
   );
 }

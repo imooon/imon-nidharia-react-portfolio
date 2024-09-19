@@ -1,21 +1,29 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import './App.css';
+import Navbar from './components/Navbar'; // Adjust the path as needed
+import './components/Navbar.css'; // Make sure this path is correct
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div>
       <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
+      <section className="section section-home" id="home">
+        <h2>Home</h2>
+        <p>Welcome to my portfolio!</p>
+      </section>
+      <section className="section section-about" id="about">
+        <h2>About Me</h2>
+        <p>Here’s a little bit about me.</p>
+      </section>
+      <section className="section" id="projects">
+        <h2>Projects</h2>
+        <p>Check out my work here.</p>
+      </section>
+      <section className="section" id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with me.</p>
+      </section>
     </div>
   );
-}
+};
 
 export default App;
