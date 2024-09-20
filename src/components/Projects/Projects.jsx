@@ -1,22 +1,22 @@
 import React from 'react';
-import './Projects.css'; // Import the CSS file
+import './Projects.css'; // Ensure this path is correct
 
 const projects = [
   {
     name: 'Code Collab',
     description: 'A platform for collaborating on coding projects.',
-    link: 'https://github.com/imooon/Code-Collab'
+    link: 'https://github.com/imooon/Code-Collab',
   },
   {
     name: 'Harmony Hub',
     description: 'A music playlist sharing app.',
-    link: 'https://github.com/imooon/Harmony-Hub-App'
+    link: 'https://github.com/imooon/Harmony-Hub-App',
   },
   {
     name: 'Motor Matcher',
     description: 'An application to help find the perfect vehicle.',
-    link: 'https://github.com/imooon/motormatcher-app'
-  }
+    link: 'https://github.com/imooon/motormatcher-app',
+  },
 ];
 
 const Projects = () => {
@@ -34,6 +34,6 @@ const Projects = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Projects;

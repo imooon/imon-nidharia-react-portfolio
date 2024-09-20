@@ -1,3 +1,5 @@
+/* App.css */
+
 nav ul {
   list-style: none;
   display: flex;
@@ -12,7 +14,7 @@ nav ul li a {
 }
 
 section {
-  padding: 20px;
+  padding: 10; /* Set padding to zero for uniformity */
 }
 
 h1, h2 {

@@ -2,56 +2,56 @@
 
 /* Navbar styling */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #002a5c; /* Deep navy blue */
-  }
-  
-  .navbar-left h1 {
-    color: white;
-    font-size: 1.5em; /* Adjust font size as needed */
-    margin: 0;
-  }
-  
-  .navbar-right {
-    display: flex;
-    gap: 15px; /* Spacing between navigation items */
-  }
-  
-  .navbar-right a {
-    color: white; /* White text color for links */
-    text-decoration: none;
-    padding: 5px 10px; /* Padding around navigation items */
-    border-radius: 5px; /* Rounded corners for navigation items */
-  }
-  
-  .navbar-right a:hover {
-    background-color: #004080; /* Slightly lighter navy blue for hover effect */
-  }
-  
-  /* Section styling */
-  .section {
-    padding: 20px;
-  }
-  
-  /* Deep blue sections */
-  .section-home,
-  .section-about {
-    background-color: #002a5c; /* Deep navy blue */
-    color: white; /* White text color */
-  }
-  
-  .section-home h2,
-  .section-about h2 {
-    color: white; /* White text color */
-  }
-  
-  /* Other sections */
-  .section#projects,
-  .section#contact {
-    background-color: #f0f0f0; /* Light background color for contrast */
-    color: black; /* Black text color */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #002a5c; /* Deep navy blue */
+}
+
+.navbar-left h1 {
+  color: white;
+  font-size: 1.5em; /* Adjust font size as needed */
+  margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px; /* Spacing between navigation items */
+}
+
+.navbar-right a {
+  color: white; /* White text color for links */
+  text-decoration: none;
+  padding: 5px 10px; /* Padding around navigation items */
+  border-radius: 5px; /* Rounded corners for navigation items */
+}
+
+.navbar-right a:hover {
+  background-color: #004080; /* Slightly lighter navy blue for hover effect */
+}
+
+/* Section styling */
+.section {
+  padding: 0; /* Removed padding for uniformity */
+  margin: 0; /* Removed margin for uniformity */
+}
+
+/* Deep blue sections */
+.section-home,
+.section-about {
+  background-color: #002a5c; /* Deep navy blue */
+  color: white; /* White text color */
+}
+
+.section-home h2,
+.section-about h2 {
+  color: white; /* White text color */
+}
+
+/* Other sections */
+.section#projects,
+.section#contact {
+  background-color: #f0f0f0; /* Light background color for contrast */
+  color: black; /* Black text color */
+}

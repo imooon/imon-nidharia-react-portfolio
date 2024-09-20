@@ -1,23 +1,29 @@
 /* Projects.css */
 
-/* Basic styling for the projects section */
 .projects-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Spacing between project items */
-  }
-  
-  .project-card {
-    background-color: #fff; /* White background for contrast */
-    color: black; /* Black text color */
-    padding: 20px;
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s ease; /* Smooth transition for floating effect */
-  }
-  
-  .project-card:hover {
-    transform: translateY(-10px); /* Slightly lift the card on hover */
-  }
-  
+  display: flex;
+  justify-content: space-around; /* Space between cards */
+  flex-wrap: wrap; /* Wrap to next line if not enough space */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.project-card {
+  background-color: #fff; /* White background for project cards */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside cards */
+  margin: 10px; /* Margin around each card */
+  flex: 1 1 calc(30% - 20px); /* Responsive size; 3 cards per row */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Removed the margin below sections to ensure no gaps */
+.section {
+  margin: 0; /* Removed margin for uniformity */
+}

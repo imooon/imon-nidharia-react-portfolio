@@ -19,7 +19,6 @@ const App = () => {
         <p>Here’s a little bit about me.</p>
       </section>
       <section className="section section-projects" id="projects">
-        <h2>Projects</h2>
         <Projects /> {/* Use the Projects component here */}
       </section>
       <Contact /> {/* Include the Contact component here */}
