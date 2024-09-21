@@ -8,6 +8,7 @@ import './components/Contact/Contact.css'; // Import Contact CSS
 import Footer from './components/Footer/Footer'; // Import Footer
 import './components/Footer/Footer.css';
 import About from './components/About/About';
+import './components/About/About.css';
 import Home from './components/Home/Home';
 
 
