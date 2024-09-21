@@ -5,23 +5,29 @@ import Projects from './components/Projects/Projects'; // Import Projects compon
 import './components/Projects/Projects.css'; // Import Projects CSS
 import Contact from './components/Contact/Contact'; // Import Contact component
 import './components/Contact/Contact.css'; // Import Contact CSS
+import Footer from './components/Footer/Footer'; // Import Footer
+import './components/Footer/Footer.css';
+import About from './components/About/About';
+import Home from './components/Home/Home';
+
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <section className="section section-home" id="home">
-        <h2>Home</h2>
-        <p>Welcome to my portfolio!</p>
+      <section className="section section-home" id="about">
+        <About />
       </section>
-      <section className="section section-about" id="about">
-        <h2>About Me</h2>
-        <p>Here’s a little bit about me.</p>
+      <section className="section section-about" id="home">
+        <Home />
       </section>
       <section className="section section-projects" id="projects">
         <Projects /> {/* Use the Projects component here */}
       </section>
-      <Contact /> {/* Include the Contact component here */}
+      <section className="section section-contact" id="contact">
+        <Contact />
+      </section>
+      <Footer /> {/* Add Footer component */}
     </div>
   );
 };

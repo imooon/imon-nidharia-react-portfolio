@@ -6,22 +6,25 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #002a5c; /* Deep navy blue */
+  background-color: #001233; /* Deep navy blue */
+  padding-top: 30px
 }
 
 .navbar-left h1 {
-  color: white;
+  color: #ff8000;
   font-size: 1.5em; /* Adjust font size as needed */
   margin: 0;
+  padding-left: 20px;
 }
 
 .navbar-right {
   display: flex;
   gap: 15px; /* Spacing between navigation items */
+  padding-right: 20px;
 }
 
 .navbar-right a {
-  color: white; /* White text color for links */
+  color: #ff8000;
   text-decoration: none;
   padding: 5px 10px; /* Padding around navigation items */
   border-radius: 5px; /* Rounded corners for navigation items */
@@ -40,7 +43,7 @@
 /* Deep blue sections */
 .section-home,
 .section-about {
-  background-color: #002a5c; /* Deep navy blue */
+  background-color: #001233; /* Deep navy blue */
   color: white; /* White text color */
 }
 

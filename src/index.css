@@ -1,7 +1,72 @@
-/* Index.css */
-
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section heights set to fill the entire viewport height */
+.section {
+    min-height: 100vh; /* Each section takes up full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove padding */
+}
+
+/* Navigation fix for smooth scroll */
+.navbar {
+    position: fixed; /* Navbar stays fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ensure no gaps between sections */
+.section-home,
+.section-about {
+    background-color: #001233; /* Deep navy blue */
+    color: #ff8000; /* White text color */
+}
+
+.section-projects,
+.section-contact {
+    background-color: #f0f0f0; /* Light grey background for contrast */
+    color: black; /* Black text color */
+}
+
+.section h2 {
+    font-size: 3em; /* Large heading for modern look */
+}
+
+.section p {
+    font-size: 1.2em; /* Larger font size for better readability */
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 2.5em;
+    }
+
+    .section p {
+        font-size: 1em;
+    }
+}
+
+/* Further responsive adjustments */
+@media (max-width: 480px) {
+    .section h2 {
+        font-size: 2em;
+    }
+
+    .section p {
+        font-size: 0.9em;
+    }
 }

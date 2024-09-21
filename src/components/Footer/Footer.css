@@ -1,0 +1,32 @@
+/* Footer.css */
+
+.footer {
+    background-color: #001233; /* Deep navy blue */
+    color: #ff8000; /* White text */
+    text-align: center;
+    padding: 20px;
+    margin: 0; /* No margin */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ff8000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #80bfff; /* Light blue hover effect */
+}

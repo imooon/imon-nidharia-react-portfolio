@@ -9,12 +9,12 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: #ff8000;
   text-decoration: none;
 }
 
 section {
-  padding: 10; /* Set padding to zero for uniformity */
+  padding: 0; /* Set padding to zero for uniformity */
 }
 
 h1, h2 {
