@@ -58,3 +58,7 @@ textarea {
   width: 100vw; /* Full width */
   overflow-x: hidden; /* Prevent overflow */
 }
+
+.sectionTitle {
+  padding-top: 150px;
+}

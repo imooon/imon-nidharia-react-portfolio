@@ -1,5 +1,11 @@
 /* Navbar.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+nav {
+  font-family: 'Playwrite HU', sans-serif; /* Apply the font to the navbar */
+}
+
 /* Navbar styling */
 .navbar {
   display: flex;
@@ -7,20 +13,35 @@
   align-items: center;
   padding: 10px 20px;
   background-color: #001233; /* Deep navy blue */
-  padding-top: 30px
 }
 
-.navbar-left h1 {
+.navbar-left {
   color: #ff8000;
-  font-size: 1.5em; /* Adjust font size as needed */
+  font-size: 2.8em;
   margin: 0;
   padding-left: 20px;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+.navbar-left.fade-in {
+  opacity: 1; /* Fade in effect */
 }
 
 .navbar-right {
   display: flex;
-  gap: 15px; /* Spacing between navigation items */
+  gap: 15px;
   padding-right: 20px;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+.navbar-right.open {
+  opacity: 1; /* Fade in when open */
+}
+
+.navbar-right.fade-in-links {
+  opacity: 1; /* Fade in effect for links */
 }
 
 .navbar-right a {
@@ -34,27 +55,34 @@
   background-color: #004080; /* Slightly lighter navy blue for hover effect */
 }
 
-/* Section styling */
-.section {
-  padding: 0; /* Removed padding for uniformity */
-  margin: 0; /* Removed margin for uniformity */
+/* Responsive styles */
+.hamburger {
+  display: none; /* Hide by default */
+  font-size: 2em; /* Size of the hamburger icon */
+  color: #ff8000; /* Same orange color */
+  cursor: pointer; /* Pointer cursor */
 }
 
-/* Deep blue sections */
-.section-home,
-.section-about {
-  background-color: #001233; /* Deep navy blue */
-  color: white; /* White text color */
-}
+/* Adjust text size for smaller screens */
+@media (max-width: 768px) {
+  .navbar-right {
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Positioning for dropdown */
+    top: 100%; /* Below the navbar */
+    left: 0;
+    background-color: #001233; /* Match navbar background */
+    width: 100%; /* Full width */
+    z-index: 10; /* Ensure it appears above other elements */
+  }
 
-.section-home h2,
-.section-about h2 {
-  color: white; /* White text color */
-}
+  .navbar-right a {
+    padding: 10px; /* More padding for links */
+    text-align: center; /* Center text */
+    border: none; /* Remove borders */
+  }
 
-/* Other sections */
-.section#projects,
-.section#contact {
-  background-color: #f0f0f0; /* Light background color for contrast */
-  color: black; /* Black text color */
+  .hamburger {
+    display: block; /* Show hamburger menu */
+  }
 }
