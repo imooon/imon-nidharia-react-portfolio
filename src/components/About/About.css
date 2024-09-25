@@ -1,58 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
 body {
-  font-family:'Roboto';
+  font-family: 'Roboto';
   background-color: #131417;  
 }
+
 p {
   text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
 }
+
 .container {
   color: #e5e5e5;
   font-size: 2.26rem;
   text-transform: uppercase;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
 }
 
 .animation {
-  height:50px;
-  overflow:hidden;
-  margin-left: 1rem;
+  height: 50px; /* Height for the animation area */
+  overflow: hidden; /* Hide overflow */
+  margin-left: 1rem; /* Space between text and animation */
+  display: flex; /* Flexbox for the animation section */
+  flex-direction: column; /* Stack items vertically within animation */
 }
 
 .animation > div > div {
-  padding: 0.25rem 0.75rem;
-  height:2.81rem;
-  margin-bottom: 2.81rem;
-  display:inline-block;
+  padding: 0.5rem 0.5rem;
+  /* height: 3rem; Ensure height is sufficient for visibility */
+  display: inline-block; /* Maintain inline-block for individual items */
 }
 
 .animation div:first-child {
-  animation: text-animation 8s infinite;
+  animation: text-animation 9s infinite; /* Animation with infinite loop */
 }
 
 .first div {
-  background-color:#20a7d8;
+  background-color: #20a7d8;
 }
 .second div {
-  background-color:#CD921E;
+  background-color: #CD921E;
 }
 .third div {
-  background-color:#c10528;
+  background-color: #c10528;
 }
 
 @keyframes text-animation {
-  0% {margin-top: 0;}
-  10% {margin-top: 0;}
-  20% {margin-top: -5.62rem;}
-  30% {margin-top: -5.62rem;}
-  40% {margin-top: -11.24rem;}
-  60% {margin-top: -11.24rem;}
-  70% {margin-top: -5.62rem;}
-  80% {margin-top: -5.62rem;}
-  90% {margin-top: 0;}
-  100% {margin-top: 0;}
+  0% { margin-top: 0; }
+  10% { margin-top: 0; }
+  20% { margin-top: -3rem; } /* Slide out first item */
+  30% { margin-top: -3rem; } /* Hold first item out */
+  40% { margin-top: -6rem; } /* Slide out second item */
+  50% { margin-top: -6rem; } /* Hold second item out */
+  60% { margin-top: -3rem; } /* Slide in third item */
+  70% { margin-top: -3rem; } /* Hold third item */
+  80% { margin-top: 0; } /* Reset to first item */
+  90% { margin-top: 0; }
+  100% { margin-top: 0; }
 }

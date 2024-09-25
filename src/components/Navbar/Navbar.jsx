@@ -22,7 +22,7 @@ const Navbar = () => {
         Imon Nidharia
       </div>
       <div className={`navbar-right ${isOpen ? 'open' : ''} ${loaded ? 'fade-in-links' : ''}`}>
-        <a href="#about" className="coolBeans">About Me</a>
+        <a href="#about" className="coolBeans">About</a>
         <a href="#home" className="coolBeans">Home</a>
         <a href="#projects" className="coolBeans">Projects</a>
         <a href="#contact" className="coolBeans">Contact</a>
