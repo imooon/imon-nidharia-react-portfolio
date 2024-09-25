@@ -58,6 +58,7 @@ You can also use the [Formspree.io](https://formspree.io) integrated into this s
 1. **Images**: All images on this website have been generated using Dall-E, ensuring a unique and customized visual experience.
 2. **Contact Form**: The contact form on this site is powered by [Formspree.io](https://formspree.io), providing a reliable way for you to get in touch with me.
 3. **Text Animation - N° 1**: by [Carlos Córdova](https://codepen.io/carloscdev/pen/mdBLmwP).
+4. **Menu "Hamburger" Icon Animations**: by [Jesse Couch](https://codepen.io/designcouch/pen/ExvwPY)
 
 ## License 
 

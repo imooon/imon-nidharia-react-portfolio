@@ -21,17 +21,23 @@ const Navbar = () => {
       <div className={`navbar-left ${loaded ? 'fade-in' : ''}`}>
         Imon Nidharia
       </div>
-      <div className={`navbar-right ${isOpen ? 'open' : ''} ${loaded ? 'fade-in-links' : ''}`}>
+      <div className={`navbar-right ${isOpen ? 'open' : ''}`}>
         <a href="#about" className="coolBeans">About</a>
         <a href="#home" className="coolBeans">Home</a>
         <a href="#projects" className="coolBeans">Projects</a>
         <a href="#contact" className="coolBeans">Contact</a>
       </div>
-      <div className="hamburger" id="hamburger-menu" onClick={toggleNavbar}>
-        &#9776; {/* Hamburger icon */}
+      <div
+        className={`hamburger ${isOpen ? 'open' : ''}`}
+        id="hamburger-menu"
+        onClick={toggleNavbar}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

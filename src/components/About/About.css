@@ -17,6 +17,7 @@ p {
   display: flex;
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
+  text-align: center;
 }
 
 .animation {
@@ -29,8 +30,8 @@ p {
 
 .animation > div > div {
   padding: 0.5rem 0.5rem;
-  /* height: 3rem; Ensure height is sufficient for visibility */
   display: inline-block; /* Maintain inline-block for individual items */
+  font-size: 1.8rem; /* Responsive font size */
 }
 
 .animation div:first-child {
@@ -38,13 +39,15 @@ p {
 }
 
 .first div {
-  background-color: #20a7d8;
+  background-color: #001233;
 }
+
 .second div {
-  background-color: #CD921E;
+  background-color: #001233;
 }
+
 .third div {
-  background-color: #c10528;
+  background-color: #001233;
 }
 
 @keyframes text-animation {
@@ -59,4 +62,65 @@ p {
   80% { margin-top: 0; } /* Reset to first item */
   90% { margin-top: 0; }
   100% { margin-top: 0; }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    font-size: 1.8rem; /* Reduce font size for tablet/mobile screens */
+    flex-direction: column; /* Stack items vertically for smaller screens */
+  }
+
+  .animation {
+    height: 40px; /* Adjust height for smaller screens */
+    margin-left: 0; /* Remove margin-left to center animation */
+  }
+
+  .animation > div > div {
+    font-size: 1.5rem; /* Smaller font size for animation on tablet/mobile */
+    padding: 0.4rem;
+  }
+
+  @keyframes text-animation {
+    0% { margin-top: 0; }
+    10% { margin-top: 0; }
+    20% { margin-top: -2.5rem; } /* Adjust sliding amount for smaller screens */
+    30% { margin-top: -2.5rem; }
+    40% { margin-top: -5rem; }
+    50% { margin-top: -5rem; }
+    60% { margin-top: -2.5rem; }
+    70% { margin-top: -2.5rem; }
+    80% { margin-top: 0; }
+    90% { margin-top: 0; }
+    100% { margin-top: 0; }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    font-size: 1.5rem; /* Further reduce font size for smaller mobile screens */
+  }
+
+  .animation {
+    height: 30px; /* Reduce animation height for small mobile screens */
+  }
+
+  .animation > div > div {
+    font-size: 1.2rem; /* Further scale down text for mobile screens */
+    padding: 0.3rem;
+  }
+
+  @keyframes text-animation {
+    0% { margin-top: 0; }
+    10% { margin-top: 0; }
+    20% { margin-top: -2rem; } /* Adjust sliding amount for smaller mobile screens */
+    30% { margin-top: -2rem; }
+    40% { margin-top: -4rem; }
+    50% { margin-top: -4rem; }
+    60% { margin-top: -2rem; }
+    70% { margin-top: -2rem; }
+    80% { margin-top: 0; }
+    90% { margin-top: 0; }
+    100% { margin-top: 0; }
+  }
 }

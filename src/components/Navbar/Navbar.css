@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 
 nav {
-  font-family: 'Playwrite HU', sans-serif; /* Apply the font to the navbar */
+  font-family: 'Playwrite HU', sans-serif;
 }
 
 /* Navbar styling */
@@ -20,69 +20,101 @@ nav {
   font-size: 2.8em;
   margin: 0;
   padding-left: 20px;
-  opacity: 0; /* Start hidden */
-  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .navbar-left.fade-in {
-  opacity: 1; /* Fade in effect */
+  opacity: 1;
 }
 
 .navbar-right {
   display: flex;
   gap: 15px;
   padding-right: 20px;
-  opacity: 0; /* Start hidden */
-  transition: opacity 0.5s ease-in-out; /* Smooth transition */
-}
-
-.navbar-right.open {
-  opacity: 1; /* Fade in when open */
-}
-
-.navbar-right.fade-in-links {
-  opacity: 1; /* Fade in effect for links */
 }
 
 .navbar-right a {
   color: #ff8000;
   text-decoration: none;
-  padding: 5px 10px; /* Padding around navigation items */
-  border-radius: 5px; /* Rounded corners for navigation items */
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .navbar-right a:hover {
-  background-color: #004080; /* Slightly lighter navy blue for hover effect */
+  background-color: #004080;
+}
+
+/* Hamburger button styling */
+.hamburger {
+  display: none;
+  font-size: 2em;
+  color: #ff8000;
+  cursor: pointer;
+}
+
+/* Hamburger icon animations */
+.hamburger.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.hamburger.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: #ff8000;
+  margin: 6px 0;
+  transition: all 0.4s ease;
 }
 
 /* Responsive styles */
-.hamburger {
-  display: none; /* Hide by default */
-  font-size: 2em; /* Size of the hamburger icon */
-  color: #ff8000; /* Same orange color */
-  cursor: pointer; /* Pointer cursor */
-}
-
-/* Adjust text size for smaller screens */
 @media (max-width: 768px) {
+  .navbar-left {
+    font-size: 1.8em;
+  }
+
   .navbar-right {
-    display: none; /* Hide links by default */
-    flex-direction: column; /* Stack links vertically */
-    position: absolute; /* Positioning for dropdown */
-    top: 100%; /* Below the navbar */
-    left: 0;
-    background-color: #001233; /* Match navbar background */
-    width: 100%; /* Full width */
-    z-index: 10; /* Ensure it appears above other elements */
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #001233;
+    width: 50%;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    opacity: 0;
+  }
+
+  .navbar-right.open {
+    display: flex;
+    transform: translateX(0);
+    opacity: 1;
   }
 
   .navbar-right a {
-    padding: 10px; /* More padding for links */
-    text-align: center; /* Center text */
-    border: none; /* Remove borders */
+    padding: 10px;
+    text-align: right;
   }
 
   .hamburger {
-    display: block; /* Show hamburger menu */
+    display: block;
   }
 }
