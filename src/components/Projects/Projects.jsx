@@ -1,5 +1,5 @@
 import React from 'react';
-import './Projects.css'; // Ensure this path is correct
+import './Projects.css'; 
 
 const projects = [
   {

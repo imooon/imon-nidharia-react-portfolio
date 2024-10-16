@@ -1,4 +1,15 @@
-/* Projects.css */
+#projects {
+  background-color: #001233;  
+  padding: 40px 0; /* Optional padding to give the section some breathing space */
+}
+
+#projects h2 {
+  text-align: center; /* Center the heading */
+  color: #ff8000; /* Same orange color as the name */
+  font-size: 2.8rem; /* Same font size as the name */
+  font-family: 'Playwrite HU', sans-serif; /* Same font as the name */
+  margin-bottom: 30px; /* Adds some space between the heading and the project cards */
+}
 
 .projects-container {
   display: flex;

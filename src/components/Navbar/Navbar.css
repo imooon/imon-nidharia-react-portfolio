@@ -6,72 +6,77 @@ nav {
   font-family: 'Playwrite HU', sans-serif;
 }
 
-/* Navbar styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #001233; /* Deep navy blue */
+  background-color: #001233;
 }
 
 .navbar-left {
-  color: #ff8000;
-  font-size: 2.8em;
+  color: #ff8000; 
+  font-size: 2.8em; 
   margin: 0;
   padding-left: 20px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
+@media (max-width: 768px) {
+  .navbar-left {
+    font-size: 1.8em; 
+  }
+}
+
 .navbar-left.fade-in {
   opacity: 1;
 }
 
+/* Navbar Right - Links */
 .navbar-right {
-  display: flex;
+  display: flex; /* Ensures the links are visible on larger screens */
   gap: 15px;
   padding-right: 20px;
 }
 
+/* Menu Link Styles */
 .navbar-right a {
-  color: #ff8000;
+  color: #ff8000; /* Orange color for the links */
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
+  font-size: 1.2rem; /* Ensures the font size remains consistent */
+  transition: all 0.3s ease;
 }
 
 .navbar-right a:hover {
-  background-color: #004080;
+  background-color: rgba(255, 128, 0, 0.2); /* Subtle hover effect */
 }
 
-/* Hamburger button styling */
+/* Hamburger Button Styling */
 .hamburger {
-  display: none;
+  display: none; /* Initially hidden for larger screens */
   font-size: 2em;
-  color: #ff8000;
+  color: #ff8000; /* Ensures the hamburger icon remains orange */
   cursor: pointer;
 }
 
-/* Hamburger icon animations */
+/* Hamburger Icon Animation */
 .hamburger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
   top: 18px;
-  width: 0%;
-  left: 50%;
 }
 
 .hamburger.open span:nth-child(2) {
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 18px;
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg);
-}
-
-.hamburger.open span:nth-child(4) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
+  opacity: 0;
 }
 
 .hamburger span {
@@ -83,38 +88,46 @@ nav {
   transition: all 0.4s ease;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .navbar-left {
-    font-size: 1.8em;
-  }
+/* Modern Toggled Menu Styling for small screens */
+.navbar-right {
+  display: flex; /* Ensures the links are visible on larger screens */
+}
 
+@media (max-width: 768px) {
   .navbar-right {
-    display: none;
+    display: none; /* Hide links for smaller screens when not toggled */
     flex-direction: column;
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #001233;
-    width: 50%;
+    background-color: rgba(0, 18, 51, 0.95); /* Background for the mobile menu */
+    width: 60%;
+    padding: 20px 0;
     z-index: 10;
     transform: translateX(100%);
-    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
     opacity: 0;
+    border-radius: 0 0 15px 15px;
   }
 
   .navbar-right.open {
     display: flex;
-    transform: translateX(0);
+    transform: translateX(0); /* Show links when toggled */
     opacity: 1;
   }
 
   .navbar-right a {
-    padding: 10px;
+    padding: 15px;
     text-align: right;
+    margin: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Separator for links */
+  }
+
+  .navbar-right a:last-child {
+    border-bottom: none; /* Remove separator from the last item */
   }
 
   .hamburger {
-    display: block;
+    display: block; /* Display hamburger on smaller screens */
   }
 }
